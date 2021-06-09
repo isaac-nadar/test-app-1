@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MaterialModule } from './ui-modules/material.module';
+import { Store } from './store/store';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,7 +19,7 @@ import { MaterialModule } from './ui-modules/material.module';
     FlexLayoutModule,
     MaterialModule,
   ],
-  providers: [],
+  providers: [Store],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

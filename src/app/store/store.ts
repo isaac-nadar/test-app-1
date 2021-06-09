@@ -7,7 +7,7 @@ const state: State = {
   data: undefined,
 };
 
-export class store {
+export class Store {
   private subject = new BehaviorSubject<State>(state);
   private store = this.subject.asObservable();
 
